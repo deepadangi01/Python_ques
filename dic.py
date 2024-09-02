@@ -18,7 +18,13 @@ for i in range(n):
     addhar=int(input("enter your adhar no "))
     name=input("enter your name ")
     mob=input("enter your mobile no ")
+    add=input("enter ")
     d={"name":name,"mobile":mob}
     r[addhar]=d
 print(r)
+
+r=['address','bhopal']
+print(r)
+
+
 
