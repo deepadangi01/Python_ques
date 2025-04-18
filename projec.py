@@ -28,20 +28,22 @@ def insert_data(d):
 
 def search_data(d):
     name=input("whom do u want to search ,enter her/his name ??")
-    if any(d):
+    if any(name):
         flag=0
         for i,j in d.items():
           if j[0]==name:
-              flag+=1
+              flag += 1
               print("E_id :",i)
               print("E_name :",j[0])
               print("E_designation :",j[1])
               print("E_gender :",j[2])
               print("E_salary :",j[3])  
-          if flag==0:
-              print("record not found")
-          else:
-              print(flag,"record found")
+        if flag==0:
+            print("record not found")
+        else:
+            print(flag,"record found")
+            
+               
     else:
         print("nothing to display")
     return d
